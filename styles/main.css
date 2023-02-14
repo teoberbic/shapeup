@@ -27,6 +27,7 @@ body {
     background-color: white;
     border-radius: 25px;
     box-shadow: 5px 5px 20px 10px black;
+    padding-right: .25em;
 }
 
 header {
@@ -47,6 +48,9 @@ header h2, header h3 {
 h1, h2, h3, h4 {
     margin: .75em 1em;
 }
+h3, h4 {
+    padding: .5em 0;
+}
 
 p {
     margin: .75em;
@@ -55,6 +59,65 @@ p {
 header img {
     float: left;
     margin: 0 .75em;
+}
+#nav_menu {
+    margin: 0;
+
+}
+#nav_menu ul {
+    margin-top: 0px;
+    list-style-type: none;
+    text-align: center;
+    border-bottom: 3px solid steelblue;
+    background-color: lightsteelblue;
+    padding: 10px 0px;
+}
+
+#nav_menu ul ul {
+    display: none;
+}
+
+#nav_menu ul li {
+    display: inline;
+    border-right: 2px solid black;
+    padding: 10px 3em;
+}
+
+#nav_menu #last {
+    border-right: none;
+}
+#nav_menu ul li a {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}   
+#nav_menu ul li a:hover {
+    color: red;
+}
+
+#nav_list h2 {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+#nav_list ul {
+    list-style-type: none;
+}
+#nav_list li {
+    width: 90%;
+    margin-top: 0px auto .5em;
+}
+#nav_list a {
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: lightsteelblue;
+    padding: .5em;
+    color: black;
+}
+#nav_list a:hover {
+    color: steelblue;
+    color: white;
 }
 
 main {
@@ -88,6 +151,7 @@ section {
 }
 
 aside {
+    float: left;
     width: 30%
 }
 
@@ -95,10 +159,19 @@ aside h3 {
     margin-top: 50px;
     color: maroon;
     font-size: 120%;
+    
 }
 
 aside li {
     line-height: 1.5em;
+    
+}
+blockquote {
+    width: 80%;
+    margin-left: 10%;
+    padding-left: 3px;
+    border-left: 10px solid salmon;
+    background-color: lightcyan;
 }
 
 footer {
